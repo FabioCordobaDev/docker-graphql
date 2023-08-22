@@ -27,9 +27,10 @@ jobs:
     - name: Build Docker image
       run: |
         docker build -t fabiocordobaimx/docker-graphql:0.0.2 .
+        docker build -t fabiocordobaimx/docker-graphql:latest .
 
     - name: Push Docker image
       run: |
-        docker push fabiocordobaimx/docker-graphql:0.0.2
+        docker push fabiocordobaimx/docker-graphql:latest
         
     #   run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
