@@ -23,7 +23,7 @@ jobs:
       with:
         major_pattern: "major:"
         minor_pattern: "feat:"
-        format: "${major}.${minor}.${path}-prerelese${increment}"
+        format: "${major}.${minor}.${patch}-prerelese${increment}"
       id: version
             
     - name: Docker login
